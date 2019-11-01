@@ -18,4 +18,4 @@ class Score(models.Model):
     name = models.CharField(max_length=100)
     professor = models.ForeignKey(Professor, on_delete=models.CASCADE)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
-    value = models.DecimalField(max_digits=2, decimal_places=2)
+    value = models.DecimalField(max_digits=4, decimal_places=2)
